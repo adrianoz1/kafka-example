@@ -32,3 +32,13 @@ consummers      messages        0          5               5               0    
 consummers      messages        1          4               4               0               consumer-consummers-1-53f60105-9449-4f2e-abca-323165f6df19 /127.0.0.1      consumer-consummers-1
 consummers      messages        2          5               5               0               consumer-consummers-1-a0940385-8585-4088-86d5-8e7b0f7a6c3b /127.0.0.1      consumer-consummers-1
 ```
+
+## Reset offset group
+```
+podman exec -it d9a924fd7506 /opt/kafka/bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --group new-consummers --topic messages --reset-offsets --to-earliest --execute
+
+GROUP                          TOPIC                          PARTITION  NEW-OFFSET     
+new-consummers                 messages                       0          0              
+new-consummers                 messages                       1          0              
+new-consummers                 messages                       2          0              
+```
