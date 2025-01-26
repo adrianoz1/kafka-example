@@ -41,7 +41,7 @@ podman exec -it d9a924fd7506 /opt/kafka/bin/kafka-console-consumer.sh --bootstra
 
 ## Stop and remove containers
 ```shell
-docker-compose down
+podman-compose down
 ```
 
 ## More commands
