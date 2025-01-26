@@ -43,3 +43,7 @@ podman exec -it d9a924fd7506 /opt/kafka/bin/kafka-console-consumer.sh --bootstra
 ```shell
 docker-compose down
 ```
+
+## More commands
+### explore docs
+-> cd ./docs 
