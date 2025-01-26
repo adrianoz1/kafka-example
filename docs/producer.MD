@@ -1,9 +1,12 @@
 ## Producer Params
---topic Topic name
---bootstrap-server Kafka server to connect
---sync Defines which messages are sent synchronously to the broker
---request-required-ack Acknowledgment required by the Producer (Default: 1)
---message-send-max-retries Maximum number of message send retries (Default: 3)
+
+| **Option**                  | **Description**                                                     |  
+|------------------------------|---------------------------------------------------------------------|  
+| `--topic`                    | Topic name                                                         |  
+| `--bootstrap-server`         | Kafka server to connect                                            |  
+| `--sync`                      | Defines which messages are sent synchronously to the broker        |  
+| `--request-required-ack`     | Acknowledgment required by the Producer (Default: 1)                |  
+| `--message-send-max-retries` | Maximum number of message send retries (Default: 3)                 |  
 
 ## Examples
 ### Create a new topic messages

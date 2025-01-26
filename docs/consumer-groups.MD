@@ -1,10 +1,12 @@
-## Consumer groups Params
---bootstrap-server Kafka server to connect
---list List groups
---describe Describe a group
---group Group name
---reset-offsets Reset offset of topic
---topic Topic name
+| **Option**             | **Description**                     |  
+|-------------------------|-------------------------------------|  
+| `--bootstrap-server`    | Kafka server to connect            |  
+| `--list`                | List groups                        |  
+| `--describe`            | Describe a group                   |  
+| `--group`               | Group name                         |  
+| `--reset-offsets`       | Reset offset of a topic            |  
+| `--topic`               | Topic name                         |  
+
 
 ## Consumer group
 ```
